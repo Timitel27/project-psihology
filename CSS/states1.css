@@ -1,11 +1,16 @@
+
 *{
     margin: 0;
     padding: 0;
     color: #591061;
+    text-decoration: none;
 }
 
 
-
+body{
+    background-image: url(images/photo_5379646284740290184_y.jpg);
+    background-repeat: no-repeat;
+}
 
 header{
     box-shadow: 20px 20px 20px #f7e1f4; 
@@ -19,13 +24,16 @@ header{
 
 
 .logo{
-    
     float: left;
     position: relative;
     top: -80px;
     margin-left: 20px;
     border-radius: 50%;
+    transition: 0.5s;
+}
 
+.logo:hover{
+    transform: scale(1.1);
 }
 
 #text1{
@@ -76,8 +84,7 @@ header{
 
 
 footer{
-    
-    height: 400px;
+    text-align: center;
     width: 100%;
     background-color:  #f7e1f4;
     margin-top: 100px;
@@ -85,18 +92,22 @@ footer{
     
 }
 
+.container-footer{
+    display: flex;
+    justify-content: center;
+}
+
+
 
 #go-Main{
-text-align: left;
+    text-decoration: none;
+    text-align: left;
     height: 30px;
     width: 100px;
     padding: 2px silver;
     background-color: white;
     color: black;
-    text-decoration: none;
     line-height: 30px;
-    position: relative;
-    right: -10px;
     border-radius: 10px;
     font-size: 1.1em;
     bottom: -10px;
@@ -106,6 +117,7 @@ text-align: left;
 
 #go-Main:hover{
     background-color: silver;
+    transform: scale(1.1);
     
     
 }
@@ -122,75 +134,58 @@ text-align: left;
 /*       soc-sety                                 */
     
 #soc-sety-footer{
-    
-    
     width: 300px;
-    height: 200px;
-     position: relative;
-    right: -40%;
-    margin-right: 0;
-    
+    height: 200px;   
+    text-align: center;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+#soc-sety-footer .soc-sety-icon{
+    display: flex;
+    justify-content: center;
+}
+
 
 #text33{
-  position: relative;
-    right: -20px;
    font-size: 1.2em;
-}
-    
-#tgram{
-    height: 50px;
-    position: relative;
-    bottom: -100px;
-    left: -150px;
-    border-radius: 5px;
-    transition: .5s;
-}
-#tgram:hover{
-    border-radius: 15px;
-}
-    
-    
-#vk{
-    
-    height: 50px;
-    position: relative;
-    border-radius: 5px;
-    bottom: -45px;
-    right: -150px;
-    transition: .5s;
-   
-    
-}  
-    
-    
-#vk:hover{
 
-    border-radius: 15px;
-    
 }
+     
     
+#vk , #tgram{
+    height: 50px;
+    transition: .5s;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+    
+#vk:hover , #tgram:hover{
+    transform: scale(1.1);
+}
+
+
     
 /*                          LS                                                  */
     
 #ls-footer{
-    
-    
+    padding: 0 100px;
     width: 200px;
     height: 200px;
     margin-left: 50px;
-    position: relative;
-    top: -200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
     
 #ls-vk{
-    
+    margin-top: 10px;
     width: 130px;
-   height: 50px;
+    height: 50px;
     background-color: #f58ef3;
-    position: relative;
-    right: -30px;
-    bottom: -20px;
     text-align: center;
     line-height: 50px;
     color: #4a0149;
@@ -198,19 +193,14 @@ text-align: left;
     transition: .5s;
 }
 
-#ls-vk:hover{
-    border-radius: 15px;
-    
-}
+
 
 #ls-tg{
     width: 130px;
     height: 50px;
     background-color: #f58ef3;
     margin-top: 50px;
-    position: relative;
-    right: -30px;
-     text-align: center;
+    text-align: center;
     line-height: 50px;
     color: #4a0149;
     border-radius: 10px;
@@ -218,23 +208,24 @@ text-align: left;
 }
 
 
-#ls-tg:hover{
-    border-radius: 15px;
-    
-}
 
+#ls-tg:hover , #ls-vk:hover{
+    transform: scale(1.05);
+}
 
 
 /*                                   ДРУГИЕ СТАТЬИ                             */
 
 
 #other-articles{
+   text-align: center;
+    padding: 0 100px;
     width: 400px;
     height: 200px; 
-    position: relative;
-    right: -940px;
-    top: -370px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
@@ -243,8 +234,6 @@ font-size: 1.2em;
 }
 
 #states1{
-    position: relative;
-    bottom: -40px;
     background-color: #f58ef3;
     color:  #4a0149;
     width: 250px;
@@ -254,18 +243,51 @@ font-size: 1.2em;
     right: -70px;
     border-radius: 10px;
     transition: .6s;
+    margin: 20px 0;
    
     
 }
 
 #states1:hover{
-border-radius: 15px;
+    transform: scale(1.05);
 }
 
+/*                       MEDIA QUESTIONS                    */
 
+@media (max-width: 767px){
+    .logo{
+        display: none;
+    }
+    
+    h1{
+        font-size: 1.3em;
+    }
+    
+    h2{
+        font-size: 1.2em;
+    }
+    
+    .container-footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .img1{
+        width: 200px;
+        height: 200px;
+    }
+}
 
-
-
+@media (max-width: 380px){
+    h1{
+        line-height: 1.5em;
+    }
+    h2{
+        line-height: 1.5em;
+        margin-top: 10px;
+        text-decoration: underline;
+    }
+}
 
 
 
