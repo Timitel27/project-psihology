@@ -230,7 +230,19 @@ footer .button:hover{
     }
 }
 
-
+@media only screen and (max-width: 767px) and (pointer: coarse){
+     footer .button{
+        font-size: 0.8em;    
+    }
+    
+    header #name{
+        font-size: 0.8em;
+    }
+    
+    header .title{
+        font-size: 0.8em;
+    }
+}
 
 
 
