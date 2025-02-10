@@ -290,6 +290,17 @@ font-size: 1.2em;
 }
 
 
+@media only screen and (max-width: 767px) and (pointer: coarse){    
+    footer .soc-sety-footer{
+        margin-top: 100px;
+    }
+    #other-articles #states1{
+        font-size: 0.8em;
+    }
+    footer #go-Main{
+         font-size: 0.8em;   
+    }
+}
 
 
 
