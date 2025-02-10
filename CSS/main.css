@@ -207,7 +207,28 @@ footer .button:hover{
     }    
 }
 
+@media (max-width: 345px){
+    
+    footer .button{
+        font-size: 0.9em;    
+    }
+    
+    header #name{
+        font-size: 0.8em;
+    }
+    
+    header .title{
+        font-size: 0.8em;
+    }
 
+}
+
+@media (max-width: 283px){
+    
+    header .title{
+        font-size: 0.6em;
+    }
+}
 
 
 
